@@ -1,15 +1,15 @@
-import { Clube } from "./clube.model";
-import { Pais } from "./pais.model";
+import { ClubeModel } from "./clube.model";
+import { PaisModel } from "./pais.model";
 
-export class Jogador {
+export class JogadorModel {
 
     public id: Number;
 
     public nome: String;
 
-    public clubeAtual: Clube;
+    public clubeAtual: ClubeModel;
 
-    public nacionalidade: Pais;
+    public nacionalidade: PaisModel;
 
     public dataNascimento: Date;
 

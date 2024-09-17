@@ -1,12 +1,12 @@
-import { Pais } from "./pais.model";
+import { PaisModel } from "./pais.model";
 
-export class Clube {
+export class ClubeModel {
 
     public id: Number;
 
     public nome: String;
 
-    public pais: Pais;
+    public pais: PaisModel;
 
     public anoFundacao: Date;
 

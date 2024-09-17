@@ -1,4 +1,4 @@
-export class Pais {
+export class PaisModel {
     
     public id: Number;
     public nome: String;

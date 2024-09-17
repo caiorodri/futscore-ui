@@ -1,21 +1,21 @@
-import { Arbitro } from "./arbitro.model";
-import { Clube } from "./clube.model";
-import { CompeticaoAno } from "./competicao.ano.model";
-import { Estadio } from "./estadio.model";
+import { ArbitroModel } from "./arbitro.model";
+import { ClubeModel } from "./clube.model";
+import { CompeticaoAnoModel } from "./competicao.ano.model";
+import { EstadioModel } from "./estadio.model";
 
-export class Partida {
+export class PartidaModel {
 
 	public id: Number;
 
-	public competicaoAno: CompeticaoAno;
+	public competicaoAno: CompeticaoAnoModel;
 
-	public clubeMandante: Clube;
+	public clubeMandante: ClubeModel;
 
-	public clubeVisitante: Clube;
+	public clubeVisitante: ClubeModel;
 
-	public estadio: Estadio;
+	public estadio: EstadioModel;
 
-	public arbitro: Arbitro;
+	public arbitro: ArbitroModel;
 
 	public mandoCampoNeutro: Boolean;
 

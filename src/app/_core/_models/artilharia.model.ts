@@ -1,16 +1,16 @@
-import { Campeonato } from "./campeonato.model";
-import { Clube } from "./clube.model";
-import { Jogador } from "./jogador.model";
+import { CampeonatoModel } from "./campeonato.model";
+import { ClubeModel } from "./clube.model";
+import { JogadorModel } from "./jogador.model";
 
-export class Artilharia {
+export class ArtilhariaModel {
 
     public id: Number;
 
-    public campeonato: Campeonato;
+    public campeonato: CampeonatoModel;
 
-    public jogador: Jogador;
+    public jogador: JogadorModel;
 
-    public clube: Clube;
+    public clube: ClubeModel;
 
     public gols: Number;
 

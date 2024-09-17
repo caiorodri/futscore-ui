@@ -1,4 +1,4 @@
-export class Arbitro {
+export class ArbitroModel {
 
     public id: Number;
     public nome: String;

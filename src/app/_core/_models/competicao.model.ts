@@ -1,12 +1,12 @@
-import { CompeticaoTipo } from "./competicao.tipo.model";
-import { Pais } from "./pais.model";
+import { CompeticaoTipoModel } from "./competicao.tipo.model";
+import { PaisModel } from "./pais.model";
 
-export class Competicao {
+export class CompeticaoModel {
     
     public id: Number;
     public nome: String;
-    public competicaoTipo: CompeticaoTipo;
-    public pais: Pais;
+    public competicaoTipo: CompeticaoTipoModel;
+    public pais: PaisModel;
     public imagem: String;
 
 }

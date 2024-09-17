@@ -1,13 +1,13 @@
-import { Clube } from "./clube.model";
-import { CompeticaoAno } from "./competicao.ano.model";
+import { ClubeModel } from "./clube.model";
+import { CompeticaoAnoModel } from "./competicao.ano.model";
 
-export class Campeonato {
+export class CampeonatoModel {
 
     public id: Number;
 
-    public competicaoAno: CompeticaoAno;
+    public competicaoAno: CompeticaoAnoModel;
 
-    public clube: Clube;
+    public clube: ClubeModel;
 
     public partidas: Number;
 

@@ -1,9 +1,9 @@
-import { CompeticaoFormato } from "./competicao.formato.model";
+import { CompeticaoFormatoModel } from "./competicao.formato.model";
 
-export class CompeticaoAno {
+export class CompeticaoAnoModel {
     
     public id: Number;
-    public competicaoFormato: CompeticaoFormato;
+    public competicaoFormato: CompeticaoFormatoModel;
     public quantidadeClube: Number;
     public ano: Date;
     public pontuacaoVitoria: Number;
