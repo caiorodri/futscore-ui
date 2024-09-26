@@ -21,4 +21,12 @@ export class PartidaModel {
 
 	public quantidadeTorcedores: Number;
 
+	public golsClubeMandante: Number;
+	
+	public golsClubeVisitante: Number;
+	
+	public partidaRealizada: Boolean;
+	
+	public dataPartida: Date;
+
 }

@@ -1,4 +1,5 @@
 import { PaisModel } from "./pais.model";
+import { PartidaModel } from "./partida.model";
 
 export class EstadioModel {
 
@@ -9,5 +10,7 @@ export class EstadioModel {
     public pais: PaisModel;
 
     public capacidade: Number;
+
+    public partidas: PartidaModel[];
 
 }

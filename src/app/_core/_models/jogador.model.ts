@@ -1,5 +1,6 @@
 import { ClubeModel } from "./clube.model";
 import { PaisModel } from "./pais.model";
+import { PosicaoModel } from "./posicao.model";
 
 export class JogadorModel {
 
@@ -12,6 +13,8 @@ export class JogadorModel {
     public nacionalidade: PaisModel;
 
     public dataNascimento: Date;
+
+    public posicao: PosicaoModel;
 
     public jogos: Number;
 
@@ -26,5 +29,9 @@ export class JogadorModel {
     public valorMercado: Number;
 
     public imagem: String;
+
+    public clubes: ClubeModel[];
+
+    public partidasRealizadas: ClubeModel[];
 
 }
