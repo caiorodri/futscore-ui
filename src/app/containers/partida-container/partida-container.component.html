@@ -1,0 +1,44 @@
+<div class="container">
+    <div *ngFor="let competicaoAno of competicoesAno" class="container-campeonato">
+        <span><b>{{ competicaoAno.competicao.nome }} - {{ competicaoAno.ano }}</b></span>
+        @for (partida of competicaoAno.partidas; track $index) {
+            <div class="container-partida">
+                <span class="data">{{ partida.horarioPartida }}</span>
+                <div class="container-clube">
+                    <div class="content-clube right">
+                                                
+                        @if (partida.clubeMandante.imagem.length > 0) {
+                            <img class="clube-logo" src="../../../{{ partida.clubeMandante.imagem }}" alt="">
+                        } @else {
+                            <img class="clube-logo" src="../../../{{ imagemNaoEncontrada }}" alt="">
+                        }
+
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="nome-clube {{ partida.golsClubeMandante > partida.golsClubeVisitante? 'bold' : '' }}">{{ partida.clubeMandante.nome }}</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span *ngIf="partida.partidaRealizada" class="gols-clube ">{{ partida.golsClubeMandante }}</span>
+                    </div>
+
+                    <span class="content-x">X</span>
+                    
+                    <div class="content-clube left">
+                        <span *ngIf="partida.partidaRealizada" class="gols-clube ">{{ partida.golsClubeVisitante }}</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                        <span class="nome-clube {{ partida.golsClubeVisitante > partida.golsClubeMandante? 'bold' : '' }}">{{ partida.clubeVisitante.nome }}</span>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        @if (partida.clubeVisitante.imagem.length > 0) {
+                            <img class="clube-logo" src="../../../{{ partida.clubeVisitante.imagem }}" alt="">
+                        } @else {
+                            <img class="clube-logo" src="../../../{{ imagemNaoEncontrada }}" alt="">
+                        }
+
+                    </div>    
+                </div>
+            </div>
+            
+            <hr>
+        }
+
+    </div>
+</div>

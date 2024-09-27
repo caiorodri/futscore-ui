@@ -1,0 +1,86 @@
+.container {
+
+    /* width: 65vw; */
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    border: .125rem solid #ddd;
+
+}
+
+.right {
+
+    justify-content: end;
+
+}
+
+.left {
+
+    justify-content: start;
+
+
+}
+
+.content-x {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.container-campeonato {
+
+    padding: 1rem 1rem;
+
+}
+
+
+.container-campeonato > span {
+
+    cursor: pointer;
+    
+}
+
+.container-partida {
+
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+
+}
+
+.container-partida:hover {
+
+    background-color: #b5aaff73;
+    
+}
+
+.container-clube {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+
+}
+
+.content-clube {
+
+    display: flex;
+    align-items: center;
+    padding: 0 .3rem;
+
+}
+
+.bold {
+
+    font-weight: bold;
+
+}
+
+.clube-logo {
+
+    margin-top: -0.2rem;
+    max-width: 1.2rem;
+
+}

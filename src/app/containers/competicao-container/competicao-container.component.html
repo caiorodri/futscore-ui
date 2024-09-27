@@ -1,0 +1,51 @@
+<div class="container-fluid">
+
+    <h3>Campeonatos</h3>
+    
+    <ul class="list-group">
+    
+        <ng-template [ngIf]="true" *ngFor="let continente of continentes">
+            
+            @if (continente.id == continenteSelecionado.id) {
+
+                <button type="button" class="list-group-item" (click)="alterarContinenteSelecionado(continente)">{{ continente.nome }}</button>
+
+            } @else {
+
+                <button type="button" class="list-group-item form-select" (click)="alterarContinenteSelecionado(continente)">{{ continente.nome }}</button>
+
+            }
+            
+            <ng-template [ngIf]="continenteSelecionado.id == continente.id" *ngFor="let pais of continente.paises">
+
+                @if(pais.id == paisSelecionado.id){
+
+                    <button class="list-group-item pais cor-principal" (click)="alterarPaisSelecionado(pais)">{{ pais.nome }}</button>
+                
+
+                } @else {
+
+                    <button class="list-group-item dropdown-toggle pais" (click)="alterarPaisSelecionado(pais)">{{ pais.nome }}</button>
+                
+                }
+                
+                <ng-template [ngIf]="paisSelecionado.id == pais.id" *ngFor="let competicao of pais.competicoes">
+
+                    <button class="list-group-item competicao" (click)="redirecionarCompeticao(competicao.id)">{{ competicao.nome }}</button>
+                
+                </ng-template>
+            
+            </ng-template>
+            
+        </ng-template>  
+    
+    </ul>
+    <!-- <ul class="list-group">
+        <a href="">
+            <li *ngFor="let competicao of competicoes" class="list-group-item">
+                {{ competicao.nome }}
+            </li>
+        </a>
+
+    </ul> -->
+</div>

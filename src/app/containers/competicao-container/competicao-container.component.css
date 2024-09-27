@@ -1,0 +1,50 @@
+.container-fluid {
+
+    width: 70%;
+
+}
+
+
+li.list-group-item {
+
+    padding: 0.15rem 0.5rem;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.pais {
+
+    padding: .3rem 0;
+    border: none;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .2);
+    /* background-color: var(--cor-principal); */
+
+}
+
+.competicao {
+
+    padding: .2rem 0;
+    border: none;
+    color: #fff;
+    /* background-color: rgba(0, 0, 0, .4); */
+    background-color: #8565b9;
+
+}
+
+
+.cor-principal {
+
+    background-color: var(--cor-principal);
+
+}
+
+.competicao:hover {
+
+    background-color: #fff;
+    color: var(--cor-principal);
+
+}

@@ -1,0 +1,45 @@
+.layout-container {
+
+    padding: 0;
+    padding-right: 1rem;
+    /* background-color: #ffffff; */
+    background-color: var(--cor-principal);
+
+}
+
+.nav-link {
+
+    color: #000;
+
+}
+
+.nav-link:hover {
+
+    color: #fff;
+
+}
+
+nav > ul {
+
+    margin-right: 5rem;
+
+}
+
+i.perfil {
+
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+    
+}
+
+i.perfil:hover {
+
+    color: rgba(255, 255, 255, 0.795);
+
+}
+
+.navbar-brand:hover {
+
+    color: #fff;
+
+}

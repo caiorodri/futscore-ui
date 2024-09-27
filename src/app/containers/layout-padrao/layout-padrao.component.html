@@ -1,0 +1,17 @@
+<nav class="navbar sticky-top layout-container">
+    <a class="navbar-brand" routerLink="home">
+        <img src="../../../assets/images/futscore-logo.png" alt="">
+        Futscore
+    </a>
+    <ul class="nav justify-content-center">
+        <li class="nav-item" *ngFor="let item of itensMenu">
+            <a class="nav-link" [routerLink]="item.url">{{ item.nome }}</a>
+        </li>
+    </ul>
+    <!-- <a class="navbar-brand" routerLink="perfil">
+        <img src="../../../assets/images/person-circle.svg" width="40" alt="">
+    </a> -->
+    <a routerLink="perfil">
+        <i class="bi bi-person-circle perfil"></i>
+    </a>
+</nav>
