@@ -29,4 +29,5 @@ export class PartidaModel {
 	
 	public dataPartida: Date;
 
+	public horarioPartida: String;
 }
